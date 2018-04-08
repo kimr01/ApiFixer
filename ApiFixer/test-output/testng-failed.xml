@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="softtest.LogoutTest">
+        <methods>
+          <include name="SignoutTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- softtest.LogoutTest -->
+      <class name="softtest.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="NegativeUIDPasswordTest"/>
+          <include name="EmptyUIDPasswordTest"/>
+        </methods>
+      </class> <!-- softtest.LoginTest -->
+      <class name="softtest.DashboardTest">
+        <methods>
+          <include name="notDisplayedCurrencyTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- softtest.DashboardTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
